@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DDCET Notes — Handwritten notes, PYQs, video lectures and PDF resources for DDCET preparation. StudyWithK." />
+  <title>DDCET Notes — StudyWithK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+    <span>Study<b>WithK</b></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ddcet.html" class="active">DDCET Notes</a></li>
+    <li><a href="degree.html">Degree Notes</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search subjects, chapters..." />
+  </div>
+  <div class="nav-actions">
+    <button class="dark-toggle" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    <a href="#" class="btn-login" onclick="showToast('Login coming soon!')">Login</a>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="ddcet.html"><i class="fas fa-book"></i> DDCET Notes</a>
+  <a href="degree.html"><i class="fas fa-university"></i> Degree Notes</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- INNER HERO -->
+  <div class="inner-hero">
+    <div class="inner-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>DDCET Notes</span>
+      </div>
+      <h1>📚 DDCET Notes</h1>
+      <p>
+        Complete study material for DDCET (Diploma to Degree Common Entrance Test) —
+        organized by subject and chapter. Click any subject to browse notes, PYQs, and videos.
+      </p>
+    </div>
+  </div>
+
+  <!-- EXPLORER -->
+  <div class="explorer-section">
+    <div class="explorer-layout">
+
+      <!-- Sidebar Tree -->
+      <aside class="explorer-sidebar">
+        <h3><i class="fas fa-sitemap" style="margin-right:6px;color:var(--primary)"></i>Browse</h3>
+        <div class="tree" id="ddcet-tree">
+          <!-- Rendered by script.js -->
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="ddcet-main">
+        <!-- Rendered by script.js -->
+      </main>
+
+    </div>
+  </div>
+
+  <!-- INFO CARDS -->
+  <section style="padding: 0 5% 70px;">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:16px;">
+      <div class="feature-card" style="text-align:center;">
+        <div class="feature-icon icon-orange" style="margin:0 auto 14px;"><i class="fas fa-pen-nib"></i></div>
+        <h3>Handwritten Notes</h3>
+        <p>Scanned & organized chapter-wise handwritten notes from toppers.</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="feature-icon icon-purple" style="margin:0 auto 14px;"><i class="fas fa-play-circle"></i></div>
+        <h3>Video Lectures</h3>
+        <p>Best YouTube video lectures for every chapter, curated carefully.</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="feature-icon icon-blue" style="margin:0 auto 14px;"><i class="fas fa-file-pdf"></i></div>
+        <h3>Practice PDFs</h3>
+        <p>Topic-wise practice question papers in downloadable PDF format.</p>
+      </div>
+      <div class="feature-card" style="text-align:center;">
+        <div class="feature-icon icon-pink" style="margin:0 auto 14px;"><i class="fas fa-history"></i></div>
+        <h3>PYQ Papers</h3>
+        <p>Previous 5 years DDCET official question papers with solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="cta-banner-text">
+      <h2>Also preparing for Degree? 🎓</h2>
+      <p>Check out our Semester-wise notes for GTU Degree Engineering students.</p>
+    </div>
+    <div class="cta-banner-btns">
+      <a href="degree.html" class="btn-white"><i class="fas fa-university"></i> Degree Notes</a>
+      <a href="contact.html" class="btn-ghost-white"><i class="fas fa-envelope"></i> Request Notes</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Study<b>WithK</b></span>
+        </a>
+        <p>A free digital learning platform for DDCET and GTU Degree students.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Home</a></li>
+          <li><a href="ddcet.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> DDCET Notes</a></li>
+          <li><a href="degree.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Degree Notes</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> About</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>DDCET Subjects</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Mathematics</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Physics</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Chemistry</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> English</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Request Notes</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Report Error</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 <span>StudyWithK</span>. Made with ❤️ for GTU & DDCET students.</p>
+      <p>Designed by <span>Krrish</span></p>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

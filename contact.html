@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact StudyWithK — Request notes, report errors, or suggest improvements for our free DDCET and GTU learning platform." />
+  <title>Contact — StudyWithK</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+    <span>Study<b>WithK</b></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="ddcet.html">DDCET Notes</a></li>
+    <li><a href="degree.html">Degree Notes</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search..." />
+  </div>
+  <div class="nav-actions">
+    <button class="dark-toggle"><i class="fas fa-moon"></i></button>
+    <a href="#" class="btn-login" onclick="showToast('Login coming soon!')">Login</a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="ddcet.html"><i class="fas fa-book"></i> DDCET Notes</a>
+  <a href="degree.html"><i class="fas fa-university"></i> Degree Notes</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- INNER HERO -->
+  <div class="inner-hero" style="background: linear-gradient(135deg, #e91e8c 0%, #ff6b35 100%);">
+    <div class="inner-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+      <h1>Get in Touch 👋</h1>
+      <p>
+        Have a question, want to request specific notes, report an error, or contribute your own materials?
+        We'd love to hear from you — usually respond within 24 hours.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact-section">
+    <div class="contact-grid">
+
+      <!-- Contact Info Cards -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <div class="ci-icon icon-teal"><i class="fab fa-telegram"></i></div>
+          <div>
+            <h4>Telegram Channel</h4>
+            <p>Join our Telegram for instant updates, new notes, and exam alerts.</p>
+            <a href="#" style="color:var(--primary); font-size:0.82rem; font-weight:600; margin-top:6px; display:inline-block;">@StudyWithK →</a>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="ci-icon icon-pink"><i class="fab fa-instagram"></i></div>
+          <div>
+            <h4>Instagram</h4>
+            <p>Follow us for study tips, quick notes, and exam schedules.</p>
+            <a href="#" style="color:var(--primary); font-size:0.82rem; font-weight:600; margin-top:6px; display:inline-block;">@studywithk →</a>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="ci-icon icon-green"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp Group</h4>
+            <p>Join our student community group for discussions and doubt clearing.</p>
+            <a href="#" style="color:var(--primary); font-size:0.82rem; font-weight:600; margin-top:6px; display:inline-block;">Join Group →</a>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="ci-icon icon-orange"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>For collaborations, note submissions, or detailed queries.</p>
+            <a href="mailto:studywithk@email.com" style="color:var(--primary); font-size:0.82rem; font-weight:600; margin-top:6px; display:inline-block;">studywithk@email.com →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h2>Send us a Message</h2>
+        <p>Fill out the form below and we'll get back to you soon.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Krrish Patel" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">Select a topic...</option>
+              <option>Request DDCET Notes</option>
+              <option>Request Degree Notes</option>
+              <option>Report an Error</option>
+              <option>Contribute My Notes</option>
+              <option>Suggest a Feature</option>
+              <option>General Query</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="college">College / Semester (Optional)</label>
+            <input type="text" id="college" placeholder="e.g. LDCE · Sem 4 · CE" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Describe your query, request, or feedback in detail..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FAQ SECTION -->
+  <section style="padding:0 5% 80px;">
+    <div class="section-tag"><i class="fas fa-question-circle"></i> FAQs</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:16px; margin-top:32px;">
+      <div class="feature-card">
+        <h3 style="margin-bottom:10px;">Is StudyWithK completely free?</h3>
+        <p>Yes! All materials — notes, PYQs, and video links — are 100% free. No registration or subscription needed.</p>
+      </div>
+      <div class="feature-card">
+        <h3 style="margin-bottom:10px;">How often are new notes added?</h3>
+        <p>We add new materials regularly, especially before GTU and DDCET exam seasons. Join our Telegram for alerts.</p>
+      </div>
+      <div class="feature-card">
+        <h3 style="margin-bottom:10px;">Can I contribute my own notes?</h3>
+        <p>Absolutely! Fill the contact form with the subject "Contribute My Notes" and we'll review and publish them.</p>
+      </div>
+      <div class="feature-card">
+        <h3 style="margin-bottom:10px;">My semester/subject is missing. What do I do?</h3>
+        <p>Request it via the contact form! If enough students request the same material, we prioritize it first.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span>Study<b>WithK</b></span>
+        </a>
+        <p>A free digital learning platform for DDCET and GTU Degree students.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Home</a></li>
+          <li><a href="ddcet.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> DDCET Notes</a></li>
+          <li><a href="degree.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Degree Notes</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> About</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="ddcet.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> DDCET Notes</a></li>
+          <li><a href="degree.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Degree Notes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-telegram"></i> Telegram</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 <span>StudyWithK</span>. Made with ❤️ for GTU & DDCET students.</p>
+      <p>Designed by <span>Krrish</span></p>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
